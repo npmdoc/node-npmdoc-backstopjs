@@ -1,0 +1,1152 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >backstopjs (v2.6.11)</a>
+</h1>
+<h4>BackstopJS: Catch CSS curveballs.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs">module backstopjs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.backstopjs">
+            function <span class="apidocSignatureSpan"></span>backstopjs
+            <span class="apidocSignatureSpan">(command, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.Reporter">
+            function <span class="apidocSignatureSpan">backstopjs.</span>Reporter
+            <span class="apidocSignatureSpan">(testSuite)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>Reporter.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>approve</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>echo</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>fs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>genConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>openReport</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>reference</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">backstopjs.</span>report</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.Reporter">module backstopjs.Reporter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.Reporter.Reporter">
+            function <span class="apidocSignatureSpan">backstopjs.</span>Reporter
+            <span class="apidocSignatureSpan">(testSuite)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.Reporter.prototype">module backstopjs.Reporter.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.Reporter.prototype.addTest">
+            function <span class="apidocSignatureSpan">backstopjs.Reporter.prototype.</span>addTest
+            <span class="apidocSignatureSpan">(pair)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.Reporter.prototype.failed">
+            function <span class="apidocSignatureSpan">backstopjs.Reporter.prototype.</span>failed
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.Reporter.prototype.passed">
+            function <span class="apidocSignatureSpan">backstopjs.Reporter.prototype.</span>passed
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.approve">module backstopjs.approve</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.approve.execute">
+            function <span class="apidocSignatureSpan">backstopjs.approve.</span>execute
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.echo">module backstopjs.echo</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.echo.execute">
+            function <span class="apidocSignatureSpan">backstopjs.echo.</span>execute
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.fs">module backstopjs.fs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.copy">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>copy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.createWriteStream">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>createWriteStream
+            <span class="apidocSignatureSpan">(path, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.exists">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>exists
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.existsSync">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>existsSync
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.readFile">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>readFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.readdir">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>readdir
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.remove">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>remove
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.stat">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>stat
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.unlink">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>unlink
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.fs.writeFile">
+            function <span class="apidocSignatureSpan">backstopjs.fs.</span>writeFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.genConfig">module backstopjs.genConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.genConfig.execute">
+            function <span class="apidocSignatureSpan">backstopjs.genConfig.</span>execute
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.openReport">module backstopjs.openReport</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.openReport.execute">
+            function <span class="apidocSignatureSpan">backstopjs.openReport.</span>execute
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.reference">module backstopjs.reference</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.reference.execute">
+            function <span class="apidocSignatureSpan">backstopjs.reference.</span>execute
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.backstopjs.report">module backstopjs.report</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.backstopjs.report.execute">
+            function <span class="apidocSignatureSpan">backstopjs.report.</span>execute
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs" id="apidoc.module.backstopjs">module backstopjs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.backstopjs" id="apidoc.element.backstopjs.backstopjs">
+        function <span class="apidocSignatureSpan"></span>backstopjs
+        <span class="apidocSignatureSpan">(command, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">backstopjs = function (command, options) {
+  var config = makeConfig(command, options);
+  return executeCommand(command, config);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.Reporter" id="apidoc.element.backstopjs.Reporter">
+        function <span class="apidocSignatureSpan">backstopjs.</span>Reporter
+        <span class="apidocSignatureSpan">(testSuite)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Reporter(testSuite) {
+  this.testSuite = testSuite;
+  this.tests = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.Reporter" id="apidoc.module.backstopjs.Reporter">module backstopjs.Reporter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.Reporter.Reporter" id="apidoc.element.backstopjs.Reporter.Reporter">
+        function <span class="apidocSignatureSpan">backstopjs.</span>Reporter
+        <span class="apidocSignatureSpan">(testSuite)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Reporter(testSuite) {
+  this.testSuite = testSuite;
+  this.tests = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.Reporter.prototype" id="apidoc.module.backstopjs.Reporter.prototype">module backstopjs.Reporter.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.Reporter.prototype.addTest" id="apidoc.element.backstopjs.Reporter.prototype.addTest">
+        function <span class="apidocSignatureSpan">backstopjs.Reporter.prototype.</span>addTest
+        <span class="apidocSignatureSpan">(pair)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addTest = function (pair) {
+  var t = new Test(pair);
+  this.tests.push(t);
+
+  return t;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = function (config) {
+  var compareConfig = require(config.tempCompareConfigFileName).compareConfig;
+
+  var report = new Reporter(config.ciReport.testSuiteName);
+
+  return map(compareConfig.testPairs, function (pair) {
+var Test = report.<span class="apidocCodeKeywordSpan">addTest</span>(pair);
+
+var referencePath = path.join(config.projectPath, pair.reference);
+var testPath = path.join(config.projectPath, pair.test);
+
+return compareImage(referencePath, testPath, config.resembleOutputOptions)
+  .then(function logCompareResult (data) {
+    pair.diff = data;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.Reporter.prototype.failed" id="apidoc.element.backstopjs.Reporter.prototype.failed">
+        function <span class="apidocSignatureSpan">backstopjs.Reporter.prototype.</span>failed
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">failed = function () {
+  var count = 0;
+
+  for (var test in this.tests) {
+    if (this.tests.hasOwnProperty(test) &#x26;&#x26; !this.tests[test].passed()) {
+      count++;
+    }
+  }
+
+  return count;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+  });
+}
+
+module.exports = {
+  execute: function (config) {
+    return compare(config).then(function (report) {
+var failed = report.<span class="apidocCodeKeywordSpan">failed</span>();
+logger.log(&#x27;Test completed...&#x27;);
+logger.log(chalk.green(report.passed() + &#x27; Passed&#x27;));
+logger.log(chalk[(failed ? &#x27;red&#x27; : &#x27;green&#x27;)](+failed + &#x27; Failed&#x27;));
+
+return writeReport(config, report).then(function (results) {
+  for (var i = 0; i &#x3c; results.length; i++) {
+    if (results[i].state !== &#x27;fulfilled&#x27;) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.Reporter.prototype.passed" id="apidoc.element.backstopjs.Reporter.prototype.passed">
+        function <span class="apidocSignatureSpan">backstopjs.Reporter.prototype.</span>passed
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">passed = function () {
+  var count = 0;
+
+  for (var test in this.tests) {
+    if (this.tests.hasOwnProperty(test) &#x26;&#x26; this.tests[test].passed()) {
+      count++;
+    }
+  }
+
+  return count;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!reporter.tests.hasOwnProperty(i)) {
+    continue;
+  }
+
+  var test = reporter.tests[i];
+  var testCase = testSuite.addTestcase(&#x27; ›› &#x27; + test.pair.label, test.pair.selector);
+
+  if (!test.<span class="apidocCodeKeywordSpan">passed</span>()) {
+    var error = &#x27;Design deviation ›› &#x27; + test.pair.label + &#x27; (&#x27; + test.pair.selector + &#x27;) component&#x27
+;;
+    testCase.addError(error, &#x27;CSS component&#x27;);
+    testCase.addFailure(error, &#x27;CSS component&#x27;);
+  }
+}
+
+return new Promise(function (resolve, reject) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.approve" id="apidoc.module.backstopjs.approve">module backstopjs.approve</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.approve.execute" id="apidoc.element.backstopjs.approve.execute">
+        function <span class="apidocSignatureSpan">backstopjs.approve.</span>execute
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function (config) {
+  // TODO:  IF Exists config.bitmaps_test  &#x26;&#x26;  list.length &#x3e; 0n  (otherwise throw)
+  console.log(&#x27;Copying from &#x27; + config.bitmaps_test + &#x27; to &#x27; + config.bitmaps_reference + &#x27;.&#x27;);
+  return fs.readdir(config.bitmaps_test, (err, list) =&#x3e; {
+    if (err) {
+      console.log(err.stack);
+    }
+    var src = path.join(config.bitmaps_test, list[list.length - 1]);
+    return fs.readdir(src, (err, files) =&#x3e; {
+      if (err) {
+        console.log(err.stack);
+      }
+      console.log(&#x27;The following files will be promoted to reference...&#x27;);
+      return map(files, (file) =&#x3e; {
+        if (FAILED_DIFF_RE.test(file)) {
+          file = file.replace(FAILED_DIFF_RE, &#x22;&#x22;);
+          console.log(&#x27;&#x3e; &#x27;, file);
+          return fs.copy(path.join(src, file), path.join(config.bitmaps_reference, file));
+        }
+        return true;
+      });
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.echo" id="apidoc.module.backstopjs.echo">module backstopjs.echo</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.echo.execute" id="apidoc.element.backstopjs.echo.execute">
+        function <span class="apidocSignatureSpan">backstopjs.echo.</span>execute
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function (config) {
+  var tests = [&#x27;capture/echoFiles.js&#x27;];
+  var casperChild = runCasper(config, tests);
+
+  return new Promise(function (resolve, reject) {
+    casperChild.on(&#x27;close&#x27;, function (code) {
+      var success = code === 0; // Will be 1 in the event of failure
+      var result = success ? &#x27;Echo files completed.&#x27; : &#x27;Echo files failed with code: &#x27; + code;
+
+      console.log(&#x27;\n&#x27; + result);
+
+      // exit if there was some kind of failure in the casperChild process
+      if (code !== 0) {
+        reject();
+      } else {
+        resolve();
+      }
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.fs" id="apidoc.module.backstopjs.fs">module backstopjs.fs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.copy" id="apidoc.element.backstopjs.fs.copy">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>copy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">copy = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+          console.log(err.stack);
+        }
+        console.log(&#x27;The following files will be promoted to reference...&#x27;);
+        return map(files, (file) =&#x3e; {
+          if (FAILED_DIFF_RE.test(file)) {
+            file = file.replace(FAILED_DIFF_RE, &#x22;&#x22;);
+            console.log(&#x27;&#x3e; &#x27;, file);
+            return fs.<span class="apidocCodeKeywordSpan">copy</span>(path.join(src, file), path.join(config.bitmaps_reference,
+file));
+          }
+          return true;
+        });
+      });
+    });
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.createWriteStream" id="apidoc.element.backstopjs.fs.createWriteStream">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>createWriteStream
+        <span class="apidocSignatureSpan">(path, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createWriteStream = function (path, options) {
+  return new WriteStream(path, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var ASYNC_COMPARE_LIMIT = 20;
+
+function storeFailedDiffImage (testPath, data) {
+var failedDiffFilename = getFailedDiffFilename(testPath);
+console.log(&#x27;   See:&#x27;, failedDiffFilename);
+
+var failedDiffStream = fs.<span class="apidocCodeKeywordSpan">createWriteStream</span>(failedDiffFilename);
+var ext = failedDiffFilename.substring(failedDiffFilename.lastIndexOf(&#x27;.&#x27;) + 1);
+
+if (ext === &#x27;png&#x27;) {
+  var storageStream = data.getDiffImage()
+      .pack()
+      .pipe(failedDiffStream);
+  return streamToPromise(storageStream, failedDiffFilename);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.exists" id="apidoc.element.backstopjs.fs.exists">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>exists
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function exists(file) {
+  return fsPromisified.stat(file)
+    .then(function (args) {
+      return args[0];
+    })
+    .catch(function () {
+      return false;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  //This script runs before your app loads. Edit here to log-in, load cookies or set other states required for your test.
+  console.log(&#x27;onBefore.js has run for &#x27;+ vp.name + &#x27;.&#x27;);
+};
+
+// // EXAMPLE: LOGIN BEFORE RUNNING TESTS
+// module.exports = function(casper, scenario, vp) {
+//   casper.thenOpen(scenario.url, function(){
+//      if (this.<span class="apidocCodeKeywordSpan">exists</span>(&#x27;form#user-login-form&#x27;)) {
+//        this.fill(&#x27;form#loginForm&#x27;,{
+//           &#x27;username&#x27;: &#x27;test&#x27;,
+//           &#x27;password&#x27;: &#x27;changeme&#x27;
+//        }, true);
+//      }
+//   });
+// };
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.existsSync" id="apidoc.element.backstopjs.fs.existsSync">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>existsSync
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">existsSync = function (path) {
+  try {
+    nullCheck(path);
+    binding.stat(pathModule._makeLong(path), statValues);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function getFailedDiffFilename (testPath) {
+  var lastSlash = testPath.lastIndexOf(path.sep);
+  return testPath.slice(0, lastSlash + 1) + &#x27;failed_diff_&#x27; + testPath.slice(lastSlash + 1, testPath.length);
+}
+
+function compareImage (referencePath, testPath, resembleOutputSettings) {
+  return new Promise(function (resolve, reject) {
+if (!fs.<span class="apidocCodeKeywordSpan">existsSync</span>(referencePath)) {
+  // Returning the error as a &#x22;resolve&#x22; so all errors can be caught instead of just the first one
+  return resolve(new Error(&#x27;Reference image not found: &#x27; + referencePath));
+}
+
+if (!fs.existsSync(testPath)) {
+  // Returning the error as a &#x22;resolve&#x22; so all errors can be caught instead of just the first one
+  return resolve(new Error(&#x27;Test image not found: &#x27; + testPath));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.readFile" id="apidoc.element.backstopjs.fs.readFile">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>readFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readFile = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.readdir" id="apidoc.element.backstopjs.fs.readdir">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>readdir
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readdir = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var FAILED_DIFF_RE = /^failed_diff_/;
+
+// This task will copy ALL test bitmap files (from the most recent test directory) to the reference directory overwritting any exisiting
+ files.
+module.exports = {
+execute: function (config) {
+  // TODO:  IF Exists config.bitmaps_test  &#x26;&#x26;  list.length &#x3e; 0n  (otherwise throw)
+  console.log(&#x27;Copying from &#x27; + config.bitmaps_test + &#x27; to &#x27; + config.bitmaps_reference + &#x27;.&#x27;);
+  return fs.<span class="apidocCodeKeywordSpan">readdir</span>(config.bitmaps_test, (err, list) =&#x3e; {
+    if (err) {
+      console.log(err.stack);
+    }
+    var src = path.join(config.bitmaps_test, list[list.length - 1]);
+    return fs.readdir(src, (err, files) =&#x3e; {
+      if (err) {
+        console.log(err.stack);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.remove" id="apidoc.element.backstopjs.fs.remove">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>remove
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">remove = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  execute: function (config) {
+var firstStep;
+
+// do not remove reference directory if we are in incremental mode
+if (config.args.filter || config.args.i) {
+  firstStep = Promise.resolve();
+} else {
+  firstStep = fs.<span class="apidocCodeKeywordSpan">remove</span>(config.bitmaps_reference).then(function () {
+    logger.success(config.bitmaps_reference + &#x27; was cleaned.&#x27;);
+  });
+}
+
+return firstStep.then(function () {
+  return createBitmaps(config, true);
+}).then(function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.stat" id="apidoc.element.backstopjs.fs.stat">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>stat
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stat = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+readFile: promisify(fs.readFile),
+writeFile: promisify(fs.writeFile),
+unlink: promisify(fs.unlink),
+remove: promisify(fsExtra.remove),
+stat: promisify(fs.stat),
+copy: promisify(fsExtra.copy),
+exists: function exists (file) {
+  return fsPromisified.<span class="apidocCodeKeywordSpan">stat</span>(file)
+    .then(function (args) {
+      return args[0];
+    })
+    .catch(function () {
+      return false;
+    });
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.unlink" id="apidoc.element.backstopjs.fs.unlink">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>unlink
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unlink = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.fs.writeFile" id="apidoc.element.backstopjs.fs.writeFile">
+        function <span class="apidocSignatureSpan">backstopjs.fs.</span>writeFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">writeFile = function () {
+  var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+  return new Promise(function (resolve, reject) {
+    args.push(function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      var args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+      resolve(args.slice(1));
+    });
+    func.apply(this, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      if (pair.diffImage) {
+        reporter.tests[i].pair.diffImage = path.relative(report, toAbsolute(pair.diffImage));
+      }
+    }
+  }
+
+  var jsonp = &#x27;report(&#x27; + JSON.stringify(reporter, null, 2) + &#x27;);&#x27;;
+  return fs.<span class="apidocCodeKeywordSpan">writeFile</span>(toAbsolute(config.compareConfigFileName), jsonp).then(function () {
+    logger.log(&#x27;Copied configuration to: &#x27; + toAbsolute(config.compareConfigFileName));
+  }, function (err) {
+    logger.error(&#x27;Failed configuration copy&#x27;);
+    throw err;
+  });
+}).then(function () {
+  if (config.openReport &#x26;&#x26; config.report &#x26;&#x26; config.report.indexOf(&#x27;browser&#x27;) &#x3e; -1) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.genConfig" id="apidoc.module.backstopjs.genConfig">module backstopjs.genConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.genConfig.execute" id="apidoc.element.backstopjs.genConfig.execute">
+        function <span class="apidocSignatureSpan">backstopjs.genConfig.</span>execute
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function genConfig(config) {
+  var promises = [];
+
+  if (config.casper_scripts) {
+    logger.log(&#x22;Copying &#x27;&#x22; + config.casper_scripts_default + &#x22;&#x27; to &#x27;&#x22; + config.casper_scripts + &#x22;&#x27;&#x22;);
+
+    promises.push(fs.copy(config.casper_scripts_default, config.casper_scripts));
+  } else {
+    logger.error(&#x27;ERROR: Can\&#x27;t generate a scripts directory. No \&#x27;casper_scripts\&#x27; path property was found in backstop.json.&#x27;);
+  }
+
+  // Copies a boilerplate config file to the current config file location.
+  promises.push(fs.copy(config.captureConfigFileNameDefault, config.backstopConfigFileName).then(function () {
+    logger.log(&#x22;Configuration file written at &#x27;&#x22; + config.backstopConfigFileName + &#x22;&#x27;&#x22;);
+  }, function (err) {
+    throw err;
+  }));
+
+  return Promise.all(promises);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.openReport" id="apidoc.module.backstopjs.openReport">module backstopjs.openReport</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.openReport.execute" id="apidoc.element.backstopjs.openReport.execute">
+        function <span class="apidocSignatureSpan">backstopjs.openReport.</span>execute
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function (config) {
+  function toAbsolute (p) {
+    if (path.isAbsolute(p)) {
+      return p;
+    }
+    return path.join(config.projectPath, p);
+  }
+
+  return new Promise(function (resolve, reject) {
+    logger.log(&#x27;Opening report.&#x27;);
+    open(toAbsolute(config.compareReportURL), function (err) {
+      if (err) {
+        logger.error(&#x27;An error occured while opening report in the default browser.&#x27;);
+      }
+      resolve();
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.reference" id="apidoc.module.backstopjs.reference">module backstopjs.reference</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.reference.execute" id="apidoc.element.backstopjs.reference.execute">
+        function <span class="apidocSignatureSpan">backstopjs.reference.</span>execute
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function (config) {
+  var firstStep;
+
+  // do not remove reference directory if we are in incremental mode
+  if (config.args.filter || config.args.i) {
+    firstStep = Promise.resolve();
+  } else {
+    firstStep = fs.remove(config.bitmaps_reference).then(function () {
+      logger.success(config.bitmaps_reference + &#x27; was cleaned.&#x27;);
+    });
+  }
+
+  return firstStep.then(function () {
+    return createBitmaps(config, true);
+  }).then(function () {
+    console.log(&#x27;\nRun `$ backstop test` to generate diff report.\n&#x27;);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.backstopjs.report" id="apidoc.module.backstopjs.report">module backstopjs.report</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.backstopjs.report.execute" id="apidoc.element.backstopjs.report.execute">
+        function <span class="apidocSignatureSpan">backstopjs.report.</span>execute
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function (config) {
+  return compare(config).then(function (report) {
+    var failed = report.failed();
+    logger.log(&#x27;Test completed...&#x27;);
+    logger.log(chalk.green(report.passed() + &#x27; Passed&#x27;));
+    logger.log(chalk[(failed ? &#x27;red&#x27; : &#x27;green&#x27;)](+failed + &#x27; Failed&#x27;));
+
+    return writeReport(config, report).then(function (results) {
+      for (var i = 0; i &#x3c; results.length; i++) {
+        if (results[i].state !== &#x27;fulfilled&#x27;) {
+          logger.error(&#x27;Failed writing report with error: &#x27; + results[i].value);
+        }
+      }
+
+      if (failed) {
+        logger.error(&#x27;*** Mismatch errors found ***&#x27;);
+        logger.log(&#x27;For a detailed report run `backstop openReport`\n&#x27;);
+        throw new Error(&#x27;Mismatch errors found.&#x27;);
+      }
+    });
+  }, function (e) {
+    logger.error(&#x27;Comparison failed with error:&#x27; + e);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
